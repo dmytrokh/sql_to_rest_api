@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Configuration;
 using System.Reflection;
 
 namespace SqlToRestApi.Services
@@ -25,10 +24,10 @@ namespace SqlToRestApi.Services
 
         public static void Read()
         {
-            ApiDbConnectionString = ConfigurationManager.ConnectionStrings["ApiDbConnection"].ConnectionString;
+            ApiDbConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["AxDbConnection"].ConnectionString;
             try
             {
-                SqlCommandTimeout = int.Parse(ConfigurationManager.AppSettings["SqlCommandTimeout"]);
+                SqlCommandTimeout = int.Parse(System.Configuration.ConfigurationManager.AppSettings["SqlCommandTimeout"]);
             }
             catch (Exception)
             {
@@ -37,7 +36,7 @@ namespace SqlToRestApi.Services
 
             try
             {
-                AuthorizationRequired = bool.Parse(ConfigurationManager.AppSettings["AuthorizationRequired"]);
+                AuthorizationRequired = bool.Parse(System.Configuration.ConfigurationManager.AppSettings["AuthorizationRequired"]);
             }
             catch (Exception)
             {
