@@ -85,6 +85,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ApiDd.sql" />
     <Content Include="Global.asax" />
     <Content Include="help.html" />
     <Content Include="Web.config" />
