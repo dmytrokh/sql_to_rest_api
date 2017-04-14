@@ -24,7 +24,7 @@ namespace SqlToRestApi.Services
 
         public static void Read()
         {
-            ApiDbConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["AxDbConnection"].ConnectionString;
+            ApiDbConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ApiDb"].ConnectionString;
             try
             {
                 SqlCommandTimeout = int.Parse(System.Configuration.ConfigurationManager.AppSettings["SqlCommandTimeout"]);
