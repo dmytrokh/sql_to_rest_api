@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlToRestApi", "SqlToRestApi.csproj", "{F44E3AA1-409B-424B-A418-333C9ECCAB9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlToRestApi", "SqlToRestApi\SqlToRestApi.csproj", "{F44E3AA1-409B-424B-A418-333C9ECCAB9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
